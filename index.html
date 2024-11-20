@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بصائر - Basaer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background: #960000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            max-width: 120px;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background: #960000;
+            transform: scale(1.05);
+        }
+        .container {
+            padding: 40px 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #960000;
+            text-align: center;
+            font-size: 24px;
+        }
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .audio-list {
+            list-style: none;
+            padding: 0;
+        }
+        .audio-item {
+            background-color: #f1f1f1;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .audio-item a {
+            color: #960000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .audio-item a:hover {
+            text-decoration: underline;
+        }
+        .audio-player {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #960000;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png.jpg" alt="شعار بصائر">
+    <h1>بصائر - Basaer</h1>
+</header>
+
+<nav>
+    <a href="#about">نبذة عن بصائر</a>
+    <a href="#media">المواد الإعلامية</a>
+    <a href="#books">الكتب والدروس</a>
+    <a href="#contact">تواصل معنا</a>
+    <a href="#register">التسجيل</a>
+</nav>
+
+<div class="container">
+    <!-- Section: About -->
+    <div id="about" class="section">
+        <h2>نبذة عن بصائر</h2>
+        <p style="font-size: 20px; font-weight: bold; text-align: center; color: #333333; padding: 10px; background-color: #f2f2f2; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
+            رؤيتنا: <span style="color: #ff2600;">تأصيلٌ شرعي و تحصينٌ فكري.</span>
+        </p>
+        <p style="font-size: 18px; font-weight: bold; text-align: center; color: #333333; padding: 15px; background-color: #e7f1ff; border-radius: 8px; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); margin: 20px auto; width: 90%; max-width: 800px;">
+            رسالتنا: 
+            <span style="color: #0056b3;">تهيئة أكاديمية علمية مجازة من مسندين؛ تنتج جيلًا مؤصلًا شرعيًا، معتدلًا فكريًا، مؤثرًا اجتماعيًا، عبر معلمين تربويين، ومشايخ متخصصين، لتحقيق بيئة علمية متواصلة ومتفاعلة في مملكة البحرين.</span>
+        </p>
+                <div class="image-gallery">
+            <div class="image-gallery" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; align-items: center;">
+
+                <div class="image-item" style="flex: 1 1 300px; display: flex; justify-content: center;">
+                    <img src="image1.jpg.png" alt="صورة 1" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="image-item" style="flex: 1 1 300px; display: flex; justify-content: center;">
+                    <img src="image2.jpg.png" alt="صورة 2" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="image-item" style="flex: 1 1 300px; display: flex; justify-content: center;">
+                    <img src="image3.jpg.png" alt="صورة 3" style="max-width: 100%; height: auto;">
+                </div>
+            
+            </div>
+            
+            <!-- Navigation buttons -->
+            <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+            <span class="next" onclick="moveSlide(1)">&#10095;</span>
+        </div>
+    </div>
+
+
+    <!-- Section: Audio Content -->
+    <div id="media" class="section">
+        <h2>الدروس شرح ثلاثة الأصول </h2>
+        <ul class="audio-list">
+            <li class="audio-item">
+                <span>الدرس الأول</span>
+                <audio class="audio-player" controls>
+                    <source src="audio1.mp3" type="audio/mp3">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </li>
+            <li class="audio-item">
+                <span>الدرس الثاني</span>
+                <audio class="audio-player" controls>
+                    <source src="audio2.mp3.mp3" type="audio/mp3">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </li>
+            <li class="audio-item">
+                <span>الدرس الثالث</span>
+                <audio class="audio-player" controls>
+                    <source src="audio3.mp3.mp3" type="audio/mp3">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </li>
+        </li>
+        <li class="audio-item">
+            <span>الدرس الرابع</span>
+            <audio class="audio-player" controls>
+                <source src="audio4.mp3" type="audio/mp3">
+                متصفحك لا يدعم تشغيل الصوت.
+            </audio>
+        </li>
+    </li>
+    <li class="audio-item">
+        <span>الدرس الخامس</span>
+        <audio class="audio-player" controls>
+            <source src="audio5.mp3.mp3" type="audio/mp3">
+            متصفحك لا يدعم تشغيل الصوت.
+        </audio>
+    </li>
+    <h2>الدروس شرح خلاصة تعظيم العلم </h2>
+        <ul class="audio-list">
+            <li class="audio-item">
+                <span>الدرس الأول</span>
+                <audio class="audio-player" controls>
+                    <source src="(١) شرح خلاصة تعظيم العلم - 5_10_2024.mp3" type="audio/mp3">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </li>
+            <li class="audio-item">
+                <span>الدرس الثاني</span>
+                <audio class="audio-player" controls>
+                    <source src="(٢) شرح خلاصة تعظيم العلم - 20_10_2024.mp3" type="audio/mp3">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </li>
+            <li class="audio-item">
+                <span>الدرس الثالث</span>
+                <audio class="audio-player" controls>
+                    <source src="(٣) شرح خلاصة تعظيم العلم - 26_10_2024.mp3" type="audio/mp3">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+            </li>
+        </li>
+        <li class="audio-item">
+            <span>الدرس الرابع</span>
+            <audio class="audio-player" controls>
+                <source src="(٤) شرح خلاصة تعظيم العلم - 02_11_2024.mp3" type="audio/mp3">
+                متصفحك لا يدعم تشغيل الصوت.
+            </audio>
+        </li>
+    </li>
+        </ul>
+        <div class="video-gallery" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+            <!-- YouTube Video -->
+            <div class="video-container" style="position: relative; text-align: center; width: 100%; max-width: 600px;">
+                <img src="https://img.youtube.com/vi/I3U2pvt5Ljo/hqdefault.jpg" alt="Video Thumbnail" style="width: 100%; cursor: pointer;" class="video-thumbnail" onclick="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <iframe src="https://www.youtube.com/embed/I3U2pvt5Ljo" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 315px; display: none;"></iframe>
+            </div>
+        
+            <!-- Local Video -->
+            <div class="video-container" style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 600px;">
+                <video controls style="width: 100%; height: 315px;">
+                    <source src="VID.mp4" type="video/mp4">
+                    <p>متصفحك لا يدعم الفيديو.</p>
+                </video>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Section: Books -->
+    <div id="books" class="section">
+        <h2>الكتب </h2>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin: 10px 0;">
+                <a href="book1.pdf.pdf" target="_blank" style="text-decoration: none; font-size: 18px; color: #007bff; display: flex; align-items: center; padding: 10px; background-color: #f7f7f7; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+                    <img src="https://img.icons8.com/ios/452/book.png" alt="Book Icon" style="width: 24px; height: 24px; margin-right: 10px;">
+                    سلسلة محفوظات المسار التأسيسي
+                </a>
+            </li>
+            <li style="margin: 10px 0;">
+                <a href="3 خريطة ثلاثة الأصول - الروقي.pdf" target="_blank" style="text-decoration: none; font-size: 18px; color: #007bff; display: flex; align-items: center; padding: 10px; background-color: #f7f7f7; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+                    <img src="https://img.icons8.com/ios/452/book.png" alt="Book Icon" style="width: 24px; height: 24px; margin-right: 10px;">
+                    خريطة ثلاثة الأصول - الروقي
+                </a>
+            </li>
+            <li style="margin: 10px 0;">
+                <a href="4 تشجير ثلاثة الأصول - نماء.pdf" target="_blank" style="text-decoration: none; font-size: 18px; color: #007bff; display: flex; align-items: center; padding: 10px; background-color: #f7f7f7; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+                    <img src="https://img.icons8.com/ios/452/book.png" alt="Book Icon" style="width: 24px; height: 24px; margin-right: 10px;">
+                    تشجير ثلاثة الأصول - نماء
+                </a>
+            </li>
+            <li style="margin: 10px 0;">
+                <a href="2 (الشرح ق) تعظيم العلم - العصيمي.pdf" target="_blank" style="text-decoration: none; font-size: 18px; color: #007bff; display: flex; align-items: center; padding: 10px; background-color: #f7f7f7; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+                    <img src="https://img.icons8.com/ios/452/book.png" alt="Book Icon" style="width: 24px; height: 24px; margin-right: 10px;">
+                    (الشرح ق) تعظيم العلم - العصيمي
+                </a>
+            </li>
+            <li style="margin: 10px 0;">
+                <a href="3 نظم معاقد تعظيم العلم - عامر بهجت.pdf" target="_blank" style="text-decoration: none; font-size: 18px; color: #007bff; display: flex; align-items: center; padding: 10px; background-color: #f7f7f7; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+                    <img src="https://img.icons8.com/ios/452/book.png" alt="Book Icon" style="width: 24px; height: 24px; margin-right: 10px;">
+                    نظم معاقد تعظيم العلم - عامر بهجت
+                </a>
+            </li>
+            <li style="margin: 10px 0;">
+                <a href="4 منحة الكريم - أبو عمر المالكي.pdf" target="_blank" style="text-decoration: none; font-size: 18px; color: #007bff; display: flex; align-items: center; padding: 10px; background-color: #f7f7f7; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+                    <img src="https://img.icons8.com/ios/452/book.png" alt="Book Icon" style="width: 24px; height: 24px; margin-right: 10px;">
+                    منحة الكريم - أبو عمر المالكي
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+
+    <!-- Section: Contact -->
+    <div id="contact" class="section" style="text-align: center; padding: 40px 20px;">
+        <h2 style="font-size: 2.5em; color: #333; margin-bottom: 20px;">تواصل معنا</h2>
+        <p style="font-size: 1.2em; color: #666; margin-bottom: 20px;">للاستفسارات، يمكنك التواصل عبر الوسائل التالية:</p>
+        <div class="social-links" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    
+            <!-- WhatsApp -->
+            <a href="https://api.whatsapp.com/send/?phone=34440790&text&type=phone_number&app_absent=0" target="_blank" 
+                style="background-color: #25D366; color: white; padding: 15px; border-radius: 50%; display: inline-block; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; font-size: 24px;">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+    
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/basaer.bh/" target="_blank" 
+                style="background-color: #E1306C; color: white; padding: 15px; border-radius: 50%; display: inline-block; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; font-size: 24px;">
+                <i class="fab fa-instagram"></i>
+            </a>
+    
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@Basaer_bh/" target="_blank" 
+                style="background-color: #FF0000; color: white; padding: 15px; border-radius: 50%; display: inline-block; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; font-size: 24px;">
+                <i class="fab fa-youtube"></i>
+            </a>
+            
+        </div>
+    </div>
+    
+    <!-- Add FontAwesome CDN for the icons to appear correctly -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+
+    <!-- Section: Registration -->
+    <div id="register" class="section" style="text-align: center; padding: 50px 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);">
+        <h2 style="font-size: 2.5em; color: #333; margin-bottom: 20px;">الاختبار</h2>
+        <p style="font-size: 1.2em; color: #555; margin-bottom: 30px;">للاختبار في البرنامج، يمكنك زيارة الرابط التالي:</p>
+        <a href="https://script.google.com/a/~/macros/s/AKfycbzo0u0YKNnYOd2EVpyAA4p_uPjTh0Xx_-G-qXsFtB1U4vuns89Btz2FuJa5EcImNet8/exec" target="_blank"
+           style="font-size: 1.4em; color: white; background-color: #4CAF50; padding: 15px 30px; border-radius: 50px; text-decoration: none; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); transition: background-color 0.3s, transform 0.3s;">
+           رابط التسجيل
+        </a>
+    </div>
+    
+    <!-- Add smooth hover effect for the link -->
+    <style>
+        #register a:hover {
+            background-color: #45a049; /* Slightly darker shade */
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+    </style>
+    
+
+<!-- Social Media Icons -->
+<div class="social-icons" style="text-align: center; padding: 20px;">
+    <a href="https://api.whatsapp.com/send/?phone=34440790&text&type=phone_number&app_absent=0" target="_blank" class="social-icon whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/basaer.bh/" target="_blank" class="social-icon instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@Basaer_bh/" target="_blank" class="social-icon youtube">
+        <i class="fab fa-youtube"></i>
+    </a>
+</div>
+
+<style>
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        display: inline-block;
+        font-size: 2.5em;
+        padding: 15px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        color: white;
+        text-decoration: none;
+        background-color: #333; /* Default background */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-icon:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* WhatsApp Icon */
+    .whatsapp {
+        background-color: #25D366;
+    }
+
+    .whatsapp:hover {
+        background-color: #128C7E;
+    }
+
+    /* Instagram Icon */
+    .instagram {
+        background-color: #E4405F;
+    }
+
+    .instagram:hover {
+        background-color: #C13584;
+    }
+
+    /* YouTube Icon */
+    .youtube {
+        background-color: #FF0000;
+    }
+
+    .youtube:hover {
+        background-color: #CC0000;
+    }
+</style>
+
+
+<footer>
+    <p>جميع الحقوق محفوظة &copy; بصائر</p>
+</footer>
+
+</body>
+</html>
